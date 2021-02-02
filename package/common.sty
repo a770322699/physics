@@ -1,20 +1,25 @@
 
+% 定义下划线为红色
+\renewcommand\uline{\bgroup\markoverwith
+{\textcolor{red}{\rule[-0.5ex]{2pt}{0.4pt}}}\ULon}
 
 \newcommand{\yqtitle}[1]{
     \begin{center}
-        #1
+        \begin{center}
+            #1
+        \end{center}
     \end{center}
 }
 
 %内容环境
-\newenvironment{yq_content}{
+\newenvironment{yqcontent}{
     
 }{
 
 }
 
 %练习环境
-\newenvironment{yq_workbook}{
+\newenvironment{yqworkbook}{
 
 }{
 
